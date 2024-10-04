@@ -1,7 +1,7 @@
 const PlaceHolder = () => {
     return (
         <div className="card-container">
-            <div className="card">
+            <div className="card-sign">
                 <img src="doctor.png" className="card-img-top" alt="Doctor" />
                 <div className="card-body">
                     <h5 className="card-title">Doctor</h5>
@@ -9,7 +9,7 @@ const PlaceHolder = () => {
                 </div>
             </div>
 
-            <div className="card">
+            <div className="card-sign">
                 <img src="staff.png" className="card-img-top" alt="Medical Staff" />
                 <div className="card-body">
                     <h5 className="card-title">Medical Staff</h5>

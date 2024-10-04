@@ -3,13 +3,13 @@ import PlaceHolder from "./PlaceHolder";
 
 const HomeContent = () => {
     return (
-        <div className="home-content">
-            <div className="content-wrapper">
+        <div>
+            <div className="home-content">
                 <Text />
-                <PlaceHolder />
             </div>
+            <PlaceHolder />
         </div>
     );
-}
+};
 
 export default HomeContent;

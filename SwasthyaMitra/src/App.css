@@ -1,3 +1,4 @@
+/* Header styling */
 .Header {
     background-color: #4285F4;
     text-align: justify;
@@ -6,107 +7,95 @@
     justify-content: space-between;
 }
 
+/* Navigation link styling */
 .nav-link {
     color: white !important;
     margin: 5px 25px;
 }
 
-/* Card container to arrange multiple cards */
+/* Full-width text content styling */
+.home-content {
+    width: 75%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    /* Adds space between text content and sign-in cards */
+}
+
+.home-content h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.card {
+    display: flex;
+}
+
+/* Container for the sign-in cards */
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* Place sign-in cards side by side */
     justify-content: center;
+    /* Center the cards */
+    gap: 50px;
+    /* Space between the sign-in cards */
     margin-top: 20px;
+    margin-bottom: 40px;
+    /* Space below the sign-in cards */
 }
 
-/* Card styling */
-.card {
-    height: auto;
-    width: 100%;
-    max-width: 600px;
-    /* margin: 20px auto; */
+/* Circular card styling */
+.card-sign {
+    width: 250px;
+    /* Circular width */
+    height: 250px;
+    /* Circular height */
+    border-radius: 50%;
+    /* Circular shape */
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    font-size: 20px;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
+/* Image styling within circular cards */
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    /* margin-bottom: 15px; */
+}
+
+/* Card title styling */
 .card-title {
     color: #4285F4;
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin: 10px;
 }
 
-.card-text {
-    font-size: 20px;
-    color: #333;
-    line-height: 1.5;
-}
-
-/* Card section */
-.card-section {
-    margin-top: 20px;
-}
-
-/* Container to display Text and PlaceHolder side by side */
-.content-wrapper {
-    display: flex;
-    gap: 20px;
-    /* Space between Text and PlaceHolder */
-    justify-content: space-between;
-    /* Distribute space evenly */
-    align-items: flex-start;
-    /* Align items at the top */
-    margin: 20px 0;
-}
-
-/* Adjust the width of Text and PlaceHolder to be side by side */
-.content-wrapper>* {
-    flex: 1;
-    max-width: 50%;
-    margin: 10px 50px;
-    /* Ensure they take up 50% of the width */
-}
-
-/* Optional: Add responsive styles for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .content-wrapper {
+    .card-container {
         flex-direction: column;
-        /* Stack components on smaller screens */
+        /* Stack the sign-in cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+        /* Adjust font size for smaller screens */
     }
 }
 
-/* Set a maximum width and height for the images in the cards */
-.card-img-top {
-    width: 200px;
-    /* Adjust width as needed */
-    height: 150px;
-    /* Maintain aspect ratio */
-    object-fit: contain;
-    /* Ensure the image fits inside the container */
-    margin: 0 auto;
-    /* Center the image */
-    display: block;
-    /* Ensure it's block-level for better control */
-}
-
 .body-img {
-    width: 200px;
-    height: auto;
-    margin: 25px;
-    align-self: auto;
+    height: 200px;
+    width: 300px;
 }
