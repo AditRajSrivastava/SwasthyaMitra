@@ -3,7 +3,7 @@ import PlaceHolder from "./PlaceHolder";
 
 const HomeContent = () => {
     return (
-        <div>
+        <div style={{ display: "flex" }}>
             <div className="home-content">
                 <Text />
             </div>
