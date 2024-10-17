@@ -3,13 +3,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 import Header from "./components/Header";
 import DashBoard from "./components/DashBoard";
+import RegisterPatient from "./components/RegisterPatient";
 
 function App() {
   return (
     <>
       <Header />
       {/* <HomeContent /> */}
-      <DashBoard />
+      {/* <DashBoard /> */}
+      <RegisterPatient />
     </>
   )
 }

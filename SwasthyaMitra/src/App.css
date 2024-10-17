@@ -143,3 +143,26 @@
 .footer {
     max-height: 300px;
 }
+
+.form {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Horizontal offset, vertical offset, blur radius, and shadow color */
+    padding: 10px;
+    display: flex;
+}
+
+.form-head {
+    width: 100%;
+    /* Ensures the header takes the full width */
+    margin: 0;
+    padding: 20px;
+    /* Adds padding for spacing */
+    background-color: #e3f2fd;
+    /* Sets the background to white */
+    color: #000;
+    font-size: 20;
+    /* Sets the text color to black */
+}
